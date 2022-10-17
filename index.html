@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Castro Inmobiliaria</title>
     <link rel="shortcut icon" href="./img/Logo.jpg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="./estilos/css/style.css">
 </head>
 <body>
@@ -13,7 +15,7 @@
         <header>
             <nav>
                 <figure class="header__img">
-                    <a href="./index.html"><img class="header__logo" src="./img/Logo.jpg" alt="Logo"></a>
+                    <a href="./index.html"><img class="header__logo heartbeat" src="./img/Logo.jpg" alt="Logo"></a>
                 </figure>
                 <ul class="header__navegacion">
                     <li class="nav__lista"><a href="./page/ventas.html" class="footer__navcolor anchor">VENTAS</a></li>
@@ -39,24 +41,30 @@
                         <img class="main__imagen" src="./img/Reunion.jpg" alt="Reunion">
                     </figure>
                 </article>
-                <article class="gridindex--2-1">
-                    <figure>
-                        <img class="main__imagenportada" src="./img/Portada.jpg" alt="Historia">
-                    </figure>
+                <article class="gridindex--2-1" data-aos="fade-right"
+                         data-aos-offset="300"
+                         data-aos-easing="ease-in-sine">
+                        <figure>
+                            <img class="main__imagenportada" src="./img/Portada.jpg" alt="Historia">
+                        </figure>
                 </article>
-                <article class="gridindex--2-2">
-                    <h3 class="main__titulo3">Historia</h3>
-                        <p class="main__contacto">
-                            Mas de 30 años de experiencia: acompáñenos en un viaje a través de nuestra historia y con la mirada puesta en un futuro aún más brillante. Nuestra actitud profesional y las relaciones personales que desarrollamos han sido la base de todo lo que hacemos. Por eso somos la inmobiliaria más recomendada de Merlo-San Luis y alrededores, con miles de clientes satisfechos
-                        </p>
+                <article class="gridindex--2-2" data-aos="fade-right"
+                       data-aos-offset="300"
+                       data-aos-easing="ease-in-sine">
+                        <h3 class="main__titulo3">Historia</h3>
+                            <p class="main__contacto">
+                                Mas de 30 años de experiencia: acompáñenos en un viaje a través de nuestra historia y con la mirada puesta en un futuro aún más brillante. Nuestra actitud profesional y las relaciones personales que desarrollamos han sido la base de todo lo que hacemos. Por eso somos la inmobiliaria más recomendada de Merlo-San Luis y alrededores, con miles de clientes satisfechos
+                            </p>
                 </article>
-                <article class="gridindex--3-1">
+                <article class="gridindex--3-1" data-aos="fade-up"
+                    data-aos-delay="12000">
                     <h3 class="main__titulo3">Compromiso</h3>
                         <p class="main__contacto">
                             En Castro Inmobiliaria proporcionamos una solución integral con todos los servicios inmobiliarios bajo un mismo techo, poniéndole a <span class="main__usted"><i><b>Usted</b></i></span> en primer lugar para asegurar que obtenga el mejor resultado en su venta, compra o alquiler, con la máxima facilidad y transparencia.
                         </p>
                 </article>
-                <article class="gridindex--3-2">
+                <article class="gridindex--3-2" data-aos="fade-up"
+                    data-aos-delay="12000">
                     <ul class="main__compromiso">
                         <li>Transparencia</li>
                         <li>Seguridad</li>
@@ -65,24 +73,31 @@
                         <li>Respeto</li>
                     </ul>
                 </article>
-                <article class="gridindex--4-1">
+                <article class="gridindex--4-1" data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <figure>
                         <img class="main__imagen" src="./img/Compromiso.jpg" alt="Tulugar">
                     </figure>
                 </article>
-                <article class="gridindex--4-2">
+                <article class="gridindex--4-2" data-aos="fade-left"
+                   data-aos-offset="300"
+                   data-aos-easing="ease-in-sine">
                     <h3 class="main__titulo3">Tú lugar</h3>
                     <p class="main__contacto">
                                 Únete a nosotros y pasa a formar parte de un equipo dinámico de profesionales que lideran el sector inmobiliario en Merlo-San Luis y alrededores, haciendo click <a class="anchor main__aqui" href="./page/contacto.html"><b>Aquí</b></a>
                     </p>
                 </article>
-                <section class="gridindex--5">
+                <section class="gridindex--5" data-aos="fade-zoom-in"
+                   data-aos-easing="ease-in-back"
+                   data-aos-delay="600"
+                   data-aos-offset="0">
                     <article>
                         <h3 class="main__titulo3">Donde estamos</h3>
                     </article>
                     <section class="flex__direccion">
                         <article>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d708.614488491798!2d-65.01284297780701!3d-32.345217340812454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2e165a70778d7%3A0x26cbc732ae443f88!2sCastro%20Inmobiliaria!5e0!3m2!1ses!2sar!4v1663880416109!5m2!1ses!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe class="movil" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d708.614488491798!2d-65.01284297780701!3d-32.345217340812454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2e165a70778d7%3A0x26cbc732ae443f88!2sCastro%20Inmobiliaria!5e0!3m2!1ses!2sar!4v1663880416109!5m2!1ses!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </article>
                         <article>
                             <ul class="main__contacto direccion">
@@ -122,5 +137,8 @@
             </div>
         </footer>
     </section>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

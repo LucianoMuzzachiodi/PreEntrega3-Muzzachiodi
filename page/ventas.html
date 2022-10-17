@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ventas-Castro</title>
     <link rel="shortcut icon" href="../img/Logo.jpg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="../estilos/css/bootstrap.css">
     <link rel="stylesheet" href="../estilos/css/style.css">
 </head>
-<body>
-    <section class="body">
-        <header>
+<body class="body__venta">
+        <header class="container-fluid">
             <nav>
                 <figure class="header__img">
-                    <a class="anchor" href="../index.html"><img class="header__logo" src="../img/Logo.jpg" alt="Logo"></a>
+                    <a class="anchor" href="../index.html"><img class="header__logo heartbeat" src="../img/Logo.jpg" alt="Logo"></a>
                 </figure>
                 <ul class="header__navegacion">
                     <li class="nav__lista"><a href="./ventas.html" class="footer__navcolor anchor">VENTAS</a></li>
@@ -22,56 +24,65 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <article class="main__ventaflex">
-                <h2 class="main__titulo2">Ventas</h2>
-                <figure>
-                    <img class="main__ventas--img" src="../img/Ventas.jpg" alt="Ventas">
-                </figure>
-            </article>
-            <article>
-                <p class="main__parrafo">
-                    Somos la agencia inmobiliaria líder en Merlo y sus alrededores con la mayor oferta de casas, locales y terrenos en venta.
-                </p>
-            </article>
+        <main class="container">
+            <section class="row">
+                    <article class="col-12">
+                        <h2 class="titulo__venta">Ventas</h2>
+                    </article>
+                    <figure class="col-12">
+                        <img class="main__ventas--img" src="../img/Ventas.jpg" alt="Ventas">
+                    </figure>
+                <article class="col-12">
+                    <p class="main__parrafo">
+                        Somos la agencia inmobiliaria líder en Merlo y sus alrededores con la mayor oferta de casas, locales y terrenos en venta.
+                    </p>
+                </article>
+            </section>
             <hr class="main__linea">
-            <section class="main__ventaflex">
+            <section class="row">
                 <article>
                     <h3 class="main__titulo3">Terrenos</h3>
                     <p class="main__parrafo">
                         Vea terrenos, parcelas y solares en venta en Merlo y alrededores, construya su propio sueño de una vida perfecta al pie de la montaña o invierta para el futuro. Elija entre opciones rurales y urbanas, cerca de la naturaleza o más al centro.
                     </p>
                 </article>
-                <section class="main__flex">
-                    <article class="burbuja__venta">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KUI-Mlh6xlY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h4 class="main__titulo4">Amplio terreno en Los Nogales</h4>
-                    </article>
+                <section class="col-12">
+                    <section class="main__ventas2" data-aos="flip-up" data-aos-duration="3000">
+                        <article class="burbuja__venta">
+                            <div class="ratio ratio-16x9">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/KUI-Mlh6xlY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              </div>
+                            <h4 class="main__titulo4">Amplio terreno en Los Nogales</h4>
+                        </article>
+                    </section>
                 </section>
             </section>
-            <section class="main__ventaflex">
+            <section class="row">
                 <article>
                     <h3 class="main__titulo3">Casas</h3>
                     <p class="main__parrafo">
                         Elija su casa ideal entre nuestra gama de chalets en venta en Merlo y alrededores, encuentre la combinación perfecta de espacio y ubicación al pie de la montaña con uno de los mejores climas y un estilo de vida inmejorable.
                     </p>
                 </article>
-                <section class="main__flex">
-                     <article class="burbuja__venta">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/yh_fCcDkppw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <section class="col-12 col-lg-6 main__flex">
+                     <article class="burbuja__venta--casa" data-aos="zoom-out-right" data-aos-duration="3000">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/yh_fCcDkppw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
                         <h4 class="main__titulo4">Cabañas en venta Merlo San Luis</h4>
                      </article>
-                     <article class="burbuja__venta">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9-oun27CsGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+                <section class="col-12 col-lg-6 main__flex">
+                     <article class="burbuja__venta--casa" data-aos="zoom-out-left" data-aos-duration="3000">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/9-oun27CsGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
                         <h4 class="main__titulo4">Chalet en venta - Rincón del Este</h4>
                      </article>
                 </section>
             </section>
-            <article>
-                <h3 class="main__titulo3">Locales</h3>
-            </article>
         </main>
-        <footer>
+        <footer class="container">
             <nav>
                 <ul class="footer__navegacion">
                     <li class="nav__lista"><a href="../index.html" class="footer__navcolor anchor">Inicio</a></li>
@@ -96,6 +107,9 @@
                 </section>
             </div>
         </footer>
-    </section>
+    <script>
+        AOS.init();
+      </script>
+    <link rel="stylesheet" href="../estilos/js/bootstrap.bundle.js"">
 </body>
 </html>
