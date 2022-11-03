@@ -1,0 +1,171 @@
+/*MAIN*/
+
+@mixin titulo($font-size, $color) {
+  font-size: $font-size;
+  color: $color;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  &__color {
+    background-color: $color-pimary;
+    margin-top: 2.8125rem;
+  }
+  &__titulo {
+    @include titulo($texto-titulo, white);
+    margin: 2.1875rem;
+  }
+  
+  &__titulo2 {
+    @include titulo($texto-titulo - 0.3125rem, rgb(195, 47, 39));
+    padding-top: 1.5625rem;
+    padding-bottom: 0.625rem;
+    padding-left: 0.9375rem;
+  }
+  
+  &__titulo3 {
+    @include titulo($texto-titulo - 0.9375rem,  rgb(236, 63, 19));
+    text-align: center;
+    margin-bottom: 2.1875rem;
+  }
+  
+  &__titulo4 {
+    @include titulo($texto-titulo - 2.1875rem, rgb(250, 94, 31));
+    margin: 0.5rem 0rem rem 2.6666666667rem;
+    text-align: center;
+  }
+    &__color__somos {
+      background-color: $color-pimary;
+      color: white;
+      padding: 0rem 0.9375rem 4.0625rem 0.9375rem;
+      display: grid;
+      gap: 2.8125rem;
+    }
+
+    
+    &__flex {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 4.6875rem;
+      gap: 2rem;
+      overflow: hidden;
+    }
+    
+    &__tamaño {
+      width: 34.375rem;
+    }
+    
+    &__compromiso {
+      font-size: $tamaño-texto + 0.8125rem;
+      padding: 0.975em 0rem 1.875rem 8.125rem;
+      color: white;
+      background-color: rgb(122, 1, 3);
+      margin: 4.3125rem;
+    }
+    
+    &__contacto {
+      font-size: $tamaño-texto;
+      text-align: center;
+      
+      &__usted {
+        color: brown;
+      }
+      &__aqui {
+        @extend .anchor;
+        color: rgb(122, 1, 3);
+       
+        &:hover {
+          transition-duration: 500ms;
+          color: rgb(231, 121, 17);
+        }
+      }
+    }
+    &__parrafo {
+      font-size: $tamaño-texto;
+      margin-bottom: 2.1875rem;
+      text-align: center;
+    }
+    
+    &__burbujaparrafo {
+      font-size: $tamaño-texto;
+      margin-top: 0.9375rem;
+      margin-bottom: 2.1875rem;
+      text-align: center;
+      width: 500px;
+    }
+    &__pocision {
+      width: 31.25rem;
+      display: inline-block;
+    }
+    
+    &__imagen {
+      width: 34.375rem;
+    }
+    
+    &__imagenportada {
+      width: 34.375rem;
+      height: 21.875rem;
+    }
+    
+    &__imagentuluga {
+      width: 21.875rem;
+      margin-left: 6.25rem;
+      margin-top: 3.4375rem;
+    }
+    
+    &__imgseguro {
+      width: 300px;
+      height: 255px;
+      margin: 0.9375rem 0.9375rem 0.9375rem 6.25rem;
+    }
+    
+    &__ventas {
+      font-size: $tamaño-texto;
+    }
+    
+    &__ventas2 {
+      display: flex;
+      margin-bottom: 4.6875rem;
+      justify-content: center;
+    }
+    
+    &__imgburbuja {
+      width: 489px;
+      height: 350px;
+      margin: 0.5rem;
+    }
+    
+    &__ventaflex {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 0.3125rem;
+    }
+    
+    &__ventas--img {
+      width: 100%;
+      margin-bottom: 1.25rem;
+      padding: 0 2rem;
+      text-align: center;
+    }
+    
+    
+    &__linea {
+      margin-bottom: 2.1875rem;
+    }
+    &__direccion {
+      @extend .main__contacto;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      gap: 1.125rem;
+      padding-top: 3.9375rem;
+      color: rgb(236, 63, 19);
+    }
+  }
+
+
+  

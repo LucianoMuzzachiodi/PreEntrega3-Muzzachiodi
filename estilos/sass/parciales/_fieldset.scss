@@ -1,0 +1,36 @@
+/*FIELDSET*/
+
+.fieldset {
+  margin: 1.875rem;
+  background-color: $color-burbuja;
+  width: 50%;
+  padding: 1.25rem;
+  margin-left: 23%;
+  border: $borde;
+
+   &__legend {
+      color: brown;
+      font-size: large;
+      font-style: italic;
+      font-size: $tamaño-texto + 0.625rem;
+    }
+   &__label {
+      font-size: $tamaño-texto;
+      color: rgb(236, 63, 19);
+      text-align: center;
+    }
+    
+    &__formulario--btn {
+        text-align: center;
+    }
+    
+    &__botones {
+      margin: 0.4375rem;
+      padding: 0.125rem;
+      color: brown;
+      background-color: rgb(255, 173, 51);
+      border-color: burlywood;
+    }
+}
+
+

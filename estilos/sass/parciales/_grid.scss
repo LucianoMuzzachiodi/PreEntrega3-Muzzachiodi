@@ -1,0 +1,73 @@
+/* GRID */
+
+.grid--index {
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows: repeat(6, auto);
+    overflow: hidden;
+  }
+  
+  .gridindex--1-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+    padding-top: 1.3125rem;
+  }
+  
+  .gridindex--1-2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 100%;
+  }
+  
+  .gridindex--2-1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  
+  .gridindex--2-2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-top: 0.1875rem;
+    padding-right: 3.25rem;
+  }
+  
+  .gridindex--3-1 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding-top: 5rem;
+    padding-left: 4.0625rem;
+    background-color: $color-burbuja;
+  }
+  
+  .gridindex--3-2 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: $color-burbuja;
+  }
+  
+  .gridindex--4-1 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin-bottom: 2.6875rem;
+  }
+  
+  .gridindex--4-2 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    padding-top: 3.8125rem;
+    padding-right: 2.1875rem;
+    margin-bottom: 2.6875rem;
+  }
+  
+  .gridindex--5 {
+    grid-column: 1/3;
+    grid-row: 5/6;
+    background-color: $color-burbuja;
+    padding: 2.625rem;
+    border: $borde;
+    margin: 0rem 14.1875rem 3.4375rem;
+  }
+
+
+  

@@ -1,0 +1,26 @@
+/*HEADER*/
+
+.header {
+    background-image: url(../../img/fondo.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+
+    &__logo {
+      @extend .heartbeat;
+      margin: 1rem 1rem;
+      max-width: 15.625rem;
+    }
+  }
+  
+  .header__navegacion {
+    background-color: $color-pimary;
+    font-size: $tamaño-texto + 0.3125rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+  }
+  
+
