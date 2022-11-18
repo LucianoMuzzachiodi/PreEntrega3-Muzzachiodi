@@ -24,6 +24,19 @@
     .main__compromiso {
       font-size: 1.3rem;
     }
+    .main__ventas--img {
+      width: 30rem;
+    }
+    .main__parrafo__ventas {
+      margin-top: 3.5rem;
+    }
+    .main__parrafo--principal {
+      font-size: 1.5rem;
+
+    }
+    .main__parrafo--contacto{
+      font-size: 1.5rem;
+    }
     .gridindex--3-1 {
       padding-top: 4rem;
     }
@@ -36,10 +49,8 @@
     }
     .main__flex {
       flex-direction: column;
-      margin: 5rem 13rem;
-    }
-    .main__imgburbuja {
-      height: auto;
+      margin-left: 13rem;
+      margin-right: 13rem;
     }
 }
 
@@ -71,18 +82,25 @@
       margin: 4rem 12rem;
       padding: 1rem 0rem 1rem 7rem;
     }
+    .main__parrafo--principal {
+      font-size: 1.3rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .main__parrafo--contacto {
+      font-size: 1.3rem;
+    }
     .grid--index {
       grid-template-columns: repeat(1, 745px);
-    }
-    .main__contacto {
-      font-size: 1.1rem;
-      text-align: center;
     }
     .main__color__somos {
       margin-bottom: auto;
     }
     .main__flex {
       margin: 2rem 0rem;
+    }
+    .main__ventaflex {
+      flex-direction: column;
     }
     .burbuja__venta {
       text-align: center;
@@ -140,6 +158,9 @@
     .footer__nav {
       justify-content: space-evenly;
     }
+    .col-md-12 {
+      text-align: center;
+    }
   }
   @media screen and (max-width: 320px) {
     .body {
@@ -155,6 +176,10 @@
     }
     .titulo__venta {
       font-size: 2.4375rem;
+      padding-bottom: 1.625rem;
+    }
+    .main__ventas--img {
+      width: 18rem;
     }
     .main__contacto {
       font-size: 1rem;
@@ -162,6 +187,9 @@
     .main__titulo {
       font-size: 1.9rem;
       margin: 1.1875rem;
+    }
+    .main__titulo2 {
+      padding-bottom: 1.625rem;
     }
     .main__titulo3 {
       font-size: 1.8125rem;
@@ -173,13 +201,20 @@
       grid-template-columns: repeat(1, 297px);
     }
     .main__parrafo {
-      font-size: 1.15rem;
+      font-size: 1rem;
+    }
+    .main__parrafo--principal {
+      font-size: 1rem;
+    }
+    .main__parrafo--contacto {
+      font-size: 1rem;
     }
     .main__imagen {
       width: 100%;
     }
     .main__imgburbuja {
       width: 205px;
+      height: 9rem;
     }
     .main__burbujaparrafo {
       font-size: 0.9rem;
@@ -225,6 +260,7 @@
     .gridindex--4-1 {
       margin: 0rem;
       width: 100%;
+      margin-top: 1rem;
     }
     .gridindex--4-2 {
       margin-bottom: 0.6875rem;

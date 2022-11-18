@@ -106,10 +106,10 @@ body {
 }
 
 .titulo__venta {
-  font-size: 3.4375rem;
+  font-size: 4.4375rem;
   color: rgb(195, 47, 39);
   padding-top: 1.5625rem;
-  padding-bottom: 0.625rem;
+  padding-bottom: 2.625rem;
   text-align: center;
 }
 
@@ -154,6 +154,7 @@ body {
 .header__logo {
   margin: 1rem 1rem;
   max-width: 15.625rem;
+  border-radius: 25px;
 }
 
 .header__navegacion {
@@ -181,11 +182,12 @@ body {
   margin: 2.1875rem;
 }
 .main__titulo2 {
-  font-size: 3.4375rem;
+  font-size: 4.4375rem;
   color: rgb(195, 47, 39);
   padding-top: 1.5625rem;
-  padding-bottom: 0.625rem;
+  padding-bottom: 2.625rem;
   padding-left: 0.9375rem;
+  text-align: center;
 }
 .main__titulo3 {
   font-size: 2.8125rem;
@@ -242,11 +244,24 @@ body {
   margin-bottom: 2.1875rem;
   text-align: center;
 }
+.main__parrafo__ventas {
+  margin-top: 5.5rem;
+}
+.main__parrafo--principal {
+  font-size: 1.8rem;
+  text-align: justify;
+  color: firebrick;
+}
+.main__parrafo--contacto {
+  font-size: 1.8rem;
+  text-align: center;
+  color: rgb(195, 47, 39);
+}
 .main__burbujaparrafo {
   font-size: 1.25rem;
   margin-top: 0.9375rem;
   margin-bottom: 2.1875rem;
-  text-align: center;
+  text-align: justify;
   width: 500px;
 }
 .main__pocision {
@@ -255,6 +270,7 @@ body {
 }
 .main__imagen {
   width: 34.375rem;
+  border-radius: 50px;
 }
 .main__imagenportada {
   width: 34.375rem;
@@ -269,6 +285,7 @@ body {
   width: 300px;
   height: 255px;
   margin: 0.9375rem 0.9375rem 0.9375rem 6.25rem;
+  object-fit: contain;
 }
 .main__ventas {
   font-size: 1.25rem;
@@ -278,26 +295,35 @@ body {
   margin-bottom: 4.6875rem;
   justify-content: center;
 }
-.main__imgburbuja {
+.main__imgburbuja, .main__imgburbujalocal, .main__imgburbujacasa {
   width: 489px;
   height: 350px;
   margin: 0.5rem;
 }
+.main__imgburbujacasa {
+  object-fit: cover;
+  object-position: bottom;
+}
+.main__imgburbujalocal {
+  object-fit: cover;
+  object-position: top;
+}
 .main__ventaflex {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding-bottom: 0.3125rem;
 }
 .main__ventas--img {
-  width: 100%;
-  margin-bottom: 1.25rem;
+  width: 37rem;
   padding: 0 2rem;
   text-align: center;
+  border-radius: 150px;
 }
 .main__linea {
   margin-bottom: 2.1875rem;
+  margin-top: 2.1875rem;
 }
 .main__direccion {
   display: flex;
@@ -350,6 +376,7 @@ body {
   padding: 1.25rem;
   margin-left: 23%;
   border: solid 0.3125rem brown;
+  border-radius: 20px;
 }
 .fieldset__legend {
   color: brown;
@@ -424,6 +451,7 @@ body {
   grid-column: 1/2;
   grid-row: 4/5;
   margin-bottom: 2.6875rem;
+  margin-top: 2rem;
 }
 
 .gridindex--4-2 {
@@ -441,6 +469,7 @@ body {
   padding: 2.625rem;
   border: solid 0.3125rem brown;
   margin: 0rem 14.1875rem 3.4375rem;
+  border-radius: 20px;
 }
 
 /*MEDIA*/
@@ -468,6 +497,18 @@ body {
   .main__compromiso {
     font-size: 1.3rem;
   }
+  .main__ventas--img {
+    width: 30rem;
+  }
+  .main__parrafo__ventas {
+    margin-top: 3.5rem;
+  }
+  .main__parrafo--principal {
+    font-size: 1.5rem;
+  }
+  .main__parrafo--contacto {
+    font-size: 1.5rem;
+  }
   .gridindex--3-1 {
     padding-top: 4rem;
   }
@@ -480,10 +521,8 @@ body {
   }
   .main__flex {
     flex-direction: column;
-    margin: 5rem 13rem;
-  }
-  .main__imgburbuja {
-    height: auto;
+    margin-left: 13rem;
+    margin-right: 13rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -514,18 +553,25 @@ body {
     margin: 4rem 12rem;
     padding: 1rem 0rem 1rem 7rem;
   }
+  .main__parrafo--principal {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .main__parrafo--contacto {
+    font-size: 1.3rem;
+  }
   .grid--index {
     grid-template-columns: repeat(1, 745px);
-  }
-  .main__contacto, .main__direccion {
-    font-size: 1.1rem;
-    text-align: center;
   }
   .main__color__somos {
     margin-bottom: auto;
   }
   .main__flex {
     margin: 2rem 0rem;
+  }
+  .main__ventaflex {
+    flex-direction: column;
   }
   .burbuja__venta {
     text-align: center;
@@ -583,6 +629,9 @@ body {
   .footer__nav {
     justify-content: space-evenly;
   }
+  .col-md-12 {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 320px) {
   .body {
@@ -598,6 +647,10 @@ body {
   }
   .titulo__venta {
     font-size: 2.4375rem;
+    padding-bottom: 1.625rem;
+  }
+  .main__ventas--img {
+    width: 18rem;
   }
   .main__contacto, .main__direccion {
     font-size: 1rem;
@@ -605,6 +658,9 @@ body {
   .main__titulo {
     font-size: 1.9rem;
     margin: 1.1875rem;
+  }
+  .main__titulo2 {
+    padding-bottom: 1.625rem;
   }
   .main__titulo3 {
     font-size: 1.8125rem;
@@ -616,13 +672,20 @@ body {
     grid-template-columns: repeat(1, 297px);
   }
   .main__parrafo {
-    font-size: 1.15rem;
+    font-size: 1rem;
+  }
+  .main__parrafo--principal {
+    font-size: 1rem;
+  }
+  .main__parrafo--contacto {
+    font-size: 1rem;
   }
   .main__imagen {
     width: 100%;
   }
-  .main__imgburbuja {
+  .main__imgburbuja, .main__imgburbujacasa, .main__imgburbujalocal {
     width: 205px;
+    height: 9rem;
   }
   .main__burbujaparrafo {
     font-size: 0.9rem;
@@ -668,6 +731,7 @@ body {
   .gridindex--4-1 {
     margin: 0rem;
     width: 100%;
+    margin-top: 1rem;
   }
   .gridindex--4-2 {
     margin-bottom: 0.6875rem;
